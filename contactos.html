@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- CDN de Bootstrap del CSS -->
+    <link rel="stylesheet" href="sass/style.css">   
+    <title>Forma de contactarse con la empresa</title>
+    <meta name="description" content="Máquinas Cybertron provee una alta gama de maquinaria industrial hacia todo el país. Stock permanente y envíos eficaces">
+    <meta name="keywords"  content="MAQUINAS INDUSTRIALES, INDUSTRIA PESADA, BUENOS AIRES, PRENSAS, FUNDIDORAS, MEZCLADORAS">
+</head>
+<body>
+
+    <!--HEADER + NAV-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom c-blanco-header">
+        <div class="container">
+            <h1>Maquinas Cybertron</h1>
+            <a class="navbar-brand" href="#"> <img src="images/machine_logo.png" alt="logo" class="w-75"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-end w-100">
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-light">
+                            <a class="nav-link active" aria-current="page" href="inicio.html">Inicio</a>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-light">
+                            <a class="nav-link" href="quienes_somos.html">Quienes Somos</a>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-light">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-light">
+                            <a class="nav-link" href="materialesprocesables.html">Materiales Procesables</a>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
+                                    Contactos
+                                </button>
+                                <div class="dropdown-menu btn btn-success" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="materialesprocesables.html">Contactenos</a>
+                                    <a class="dropdown-item" href="#">Pedidos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--MAIN-->
+    <main class="container">        
+        <section class="contact">
+            <div class="contactContainer">    
+                <!--box izquierdo mapa-->
+                <div class="contactMap">
+                    <h2>Nuestro local</h2>
+                    <img src="images/mapa.png" alt="storeLocation" class="mapImg">                    
+                </div>        
+                <!--form carga datos-->
+                <div class="contactFormulario">
+                    <h2 class="h2Center">Contactenos</h2>
+                    <form class="form">
+                        <div class="formSection">
+                            <input type="texto" name="nombre" value="Nombre y Apellido" required="">
+                        </div>
+                        <div class="formSection">
+                            <input type="email" value="Email" required="">
+                        </div>
+                        <div class="formSection">
+                            <select name="Ubicación" required="">
+                                <option value="CABA">CABA</option>
+                                <option value="Córdoba">Córdoba</option>
+                                <option value="Mendoza">Mendoza</option>
+                                <option value="Santa Fé">Santa Fé</option>
+                            </select>
+                        </div>                        
+                        <div class="formSection">
+                            <select name="Asunto" required="">
+                                <option value="Asunto">Envíos</option>
+                                <option value="Fechas">Recambios</option>
+                                <option value="Contrataciones">Alquileres</option>
+                            </select>
+                        </div>
+                        <div class="formCheckbox">
+                            <p>¿Desea recibir publicidades sobre nuevos productos? <input class="checkbox" type="checkbox"></p>
+                        </div>
+                        <div class="formSection">
+                            <textarea id="output" rows="10" cols="80" value="Su consulta"></textarea>
+                        </div>
+                        <div class="formSection">
+                            <button class="formReset" type="reset">Borrar mensaje</button>
+                        </div>
+                        <div class="formButton">
+                            <input class="button bnr sendButton" type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer c-black-footer-shadow">
+        <div class="footerContainer grid">            
+            <div class="footerBox"> <!--1er box-->
+                <h3 class="footerTitle">REDES SOCIALES</h3>
+                    <ol><img src="images/icons/facebook.png" class="formatSocialIcon" alt="fb icon"> Facebook</ol>
+                    <ol><img src="images/icons/instagram.png" class="formatSocialIcon" alt="fb icon">Instagram</ol>
+                    <ol><img src="images/icons/youtube.png" class="formatSocialIcon" alt="fb icon">Youtube</ol>
+                    <ol><img src="images/icons/gorjeo.png" class="formatSocialIcon" alt="fb icon">Twitter</ol>
+            </div>    
+            <div class="footerBox"> <!--2do box-->
+                <h3 class="footerTitle">MENU</h3>
+                <ul>
+                    <ol><a href="inicio.html" class="c-blanco">Inicio</a></ol>
+                    <ol><a href="quienes_somos.html" class="c-blanco">Quienes Somos</a></ol>
+                    <ol><a href="productos.html" class="c-blanco">Productos</a></ol>
+                    <ol><a href="consultas.html" class="c-blanco">Materiales Procesables</a></ol>
+                    <ol><a href="materialesprocesables.html" class="c-blanco">Contacto</a></ol>
+                </ul>
+            </div>    
+            <div class="footerBox"> <!--3er box-->
+                <h3 class="footerTitle">CONTACTO</h3>
+                <ul>
+                    <ol><a href="#" class="c-blanco">Telefono</a></ol>
+                    <ol><a href="#" class="c-blanco">Email</a></ol>
+                    <ol><a href="#" class="c-blanco">Ubicación</a></ol>
+                </ul>
+            </div>
+        </div>
+        <div class="footerCopyright">© 2021 Copyright, todos los derechos reservados - <b>Viktar-Ax</b></div>
+    </footer>
+
+    <!--JScripts-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="js/bootstrap.js"></script>
+
+
+
+
+</body>
+</html>

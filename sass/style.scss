@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); /*se importa Roboto font*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'); /*se importa Lato font*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*font-family: 'Roboto', sans-serif; ---- para linkear en clases*/
+/*font-family: 'Lato', sans-serif; ---- para linkear en clases*/
+
+/*media querys*/
+@media (min-width: 768px) and (max-width: 992px) {
+}
+@media (min-width: 992px) and (max-width: 1080px) {
+}
+
+body{ /*seteo font default para toda la pagina*/
+    font-family: 'Lato', sans-serif;  
+}
+
+html{ /*seteo de tamaño de texto para toda la pagina*/
+    font-size: 1rem;
+}
+
+h1{
+    color: burlywood;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    color: coral;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+h3{
+    color: rgb(233, 224, 179);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;    
+}
+
+/*---------------------------------------------VARIABLES----------------------------------*/
+
+$textColor: white;
+$formatImgSize: 800px;
+$formatIconSize: 80px;
+$boxBackground: rgb(226, 211, 192);
+
+/*---------------------------------------------FIN VARIABLES----------------------------------*/
+
+/*---------------------------------------------HEADER----------------------------------*/
+
+.c-blanco-header-shadow{ /*sombra al header*/
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,.3);
+    transition: background .4s ease;
+}
+
+/*---------------------------------------------FIN HEADER----------------------------------*/
+
+/*---------------------------------------------IMG FORMAT----------------------------------*/
+
+/*formateo de imagenes para que carousel mantenga aspecto*/
+.format-img{ 
+    height: $formatImgSize/2;
+    width: $formatImgSize/2;
+}
+
+.formatSocialIcon{
+    height: $formatIconSize/4;
+    width: $formatIconSize/4;
+}
+
+/*---------------------------------------------FIN IMG FORMAT----------------------------------*/
+
+/*---------------------------------------------FOOTER----------------------------------*/
+
+/*background footer*/
+/*.bg-black { 
+    background-color: #0e153a;
+}*/
+
+/*container letras blancas footer*/
+.c-blanco { 
+    color: $textColor;        
+}
+
+.footer{
+    display: grid;
+    background-color: #0e153a;
+    color: white; /*variable chequear*/
+}
+.c-black-footer-shadow{ /*sombra al footer*/
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.623);
+    transition: background .4s ease;
+}
+
+.footerContainer{
+    padding: 2rem 0;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 1.5rem;
+    margin: 2rem 0; /*variable chequear*/
+}
+
+.grid{
+    max-width: 100%;
+    display: grid;
+    /*grid-template-columns: 100%;*/
+    gap: 2rem;
+    row-gap: 2rem;
+    width: 100;
+}
+
+.footerBox{
+    margin-left: 1.5rem;
+    text-align: center;
+}
+
+.footerTitle{
+    font-size: medium; /*variable chequear*/
+}
+
+.footerSocial{
+    font-size: medium;
+    margin-right: 0.5rem; /*variable chequear*/
+}
+
+.footerCopyright{
+    border-top: 2px solid;
+    color: rgb(219, 211, 211);
+    padding: 2.75rem; /*variable chequear*/
+    text-align: center;
+    color: white; /*variable chequear*/
+    font-size: small;
+}
+
+/*---------------------------------------------FIN FOOTER----------------------------------*/
+
+/*---------------------------------------------CONTACTOS----------------------------------*/
+ 
+  .contactBox {
+    padding: 2.50rem 1.75rem;
+  }
+
+  .contactContainer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;    
+  }  
+  
+  .contactMap {    
+    padding: 1.5rem;
+    background-color: rgb(241, 235, 227);    
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,.3);
+    transition: background .4s ease;
+  }
+
+  .mapImg {
+    padding: 1.4rem 0;
+  }
+      
+  .contactFormulario {
+    padding: 1.5rem;
+    background-color: rgb(241, 235, 227);    
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,.3);
+    transition: background .4s ease;
+  }
+  
+  .formSection {
+    display: flex;
+    padding: 1rem 3.75rem;
+  }
+
+  .h2Center{
+    text-align: center;
+  }
+  
+  input, select, textarea{
+    padding: 0.5rem 1rem;    
+    border: none;
+  }
+  
+  input {
+    width: 100%;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .formCheckbox {
+    padding: 0.5rem 2rem;
+    text-align: center;
+    background-color: burlywood;
+  }
+  
+  .checkbox {
+    height: 20px;
+    width: 20px;    
+  }
+  
+  .formReset {
+    font-size: .8rem;    
+    border: black;
+    text-align: center;
+    color: white;
+    background-color: coral;
+    padding: 10px;
+    transition: .5s;
+  }
+  
+  .formReset:hover {
+    background-color: burlywood;
+  }
+  
+  .formButton {
+    text-align: center;
+    margin: 1.5rem auto;
+    max-width: 200px;
+  }
+
+  .sendButton{
+    border: black solid; 
+  }
+  .sendButton:hover{
+    background-color: burlywood;
+    transition: .5s;
+  }
+  
+/*---------------------------------------------FIN CONTACTOS----------------------------------*/
+
