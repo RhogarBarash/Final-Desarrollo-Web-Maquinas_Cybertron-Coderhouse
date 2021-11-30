@@ -242,4 +242,29 @@ textarea {
 }
 
 /*---------------------------------------------FIN CONTACTOS----------------------------------*/
+/*---------------------------------------------MATERIALES PROCESABLES----------------------------------*/
+.bannerProcesables {
+  padding: 1.5rem;
+  background-color: #f1ddc2;
+  -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transition: background .4s ease;
+  transition: background .4s ease;
+}
+
+.bannerImg {
+  height: 200;
+  width: 800;
+}
+
+.boxText {
+  padding: 1.5rem;
+  background-color: #f5ebdf;
+  -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transition: background .4s ease;
+  transition: background .4s ease;
+}
+
+/*---------------------------------------------FIN MATERIALES PROCESABLES----------------------------------*/
 /*# sourceMappingURL=style.css.map */
