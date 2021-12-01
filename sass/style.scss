@@ -102,10 +102,11 @@ $boxBackground: rgb(226, 211, 192);
     gap: 2rem;
     row-gap: 2rem;
     width: 100;
+    /*grid-template-columns: 100%;*/ /*APLICAR EN MOBILE Y TABLER*/
 }
 
 .footerBox{
-    margin-left: 1.5rem;
+    /*margin-left: 1.5rem;*/ /*ELIMINAR EN MOBILE Y TABLET*/
     text-align: center;
 }
 
