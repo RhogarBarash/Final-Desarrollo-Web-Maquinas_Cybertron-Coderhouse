@@ -75,12 +75,6 @@ $boxBackground: rgb(226, 211, 192);
 
 /*---------------------------------------------FOOTER----------------------------------*/
 
-/*background footer*/
-/*.bg-black { 
-    background-color: #0e153a;
-}*/
-
-/*container letras blancas footer*/
 .c-blanco { 
     color: $textColor;        
 }
@@ -105,7 +99,6 @@ $boxBackground: rgb(226, 211, 192);
 .grid{
     max-width: 100%;
     display: grid;
-    /*grid-template-columns: 100%;*/
     gap: 2rem;
     row-gap: 2rem;
     width: 100;
@@ -144,13 +137,19 @@ $boxBackground: rgb(226, 211, 192);
 
   .contactContainer {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 50% 50%;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    margin-bottom: 10px;    
-  }  
+    margin-bottom: 10px;
+    gap: 25px;    
+  }
+
+  .contact{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
   
   .contactMap {    
     padding: 1.5rem;
@@ -161,6 +160,7 @@ $boxBackground: rgb(226, 211, 192);
 
   .mapImg {
     padding: 1.4rem 0;
+    max-width: 100%;
   }
       
   .contactFormulario {
