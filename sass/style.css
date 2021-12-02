@@ -10,7 +10,6 @@
 
 /*font-family: 'Roboto', sans-serif; ---- para linkear en clases*/
 /*font-family: 'Lato', sans-serif; ---- para linkear en clases*/
-/*media querys*/
 body {
   /*seteo font default para toda la pagina*/
   font-family: 'Lato', sans-serif;
@@ -73,7 +72,6 @@ h3 {
   display: grid;
   background-color: #0e153a;
   color: white;
-  /*variable chequear*/
 }
 
 .c-black-footer-shadow {
@@ -90,7 +88,6 @@ h3 {
       grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 1.5rem;
   margin: 2rem 0;
-  /*variable chequear*/
 }
 
 .grid {
@@ -100,35 +97,27 @@ h3 {
   gap: 2rem;
   row-gap: 2rem;
   width: 100;
-  /*grid-template-columns: 100%;*/
-  /*APLICAR EN MOBILE Y TABLER*/
 }
 
 .footerBox {
-  /*margin-left: 1.5rem;*/
-  /*ELIMINAR EN MOBILE Y TABLET*/
   text-align: center;
 }
 
 .footerTitle {
   font-size: medium;
-  /*variable chequear*/
 }
 
 .footerSocial {
   font-size: medium;
   margin-right: 0.5rem;
-  /*variable chequear*/
 }
 
 .footerCopyright {
   border-top: 2px solid;
   color: #dbd3d3;
   padding: 2.75rem;
-  /*variable chequear*/
   text-align: center;
   color: white;
-  /*variable chequear*/
   font-size: small;
 }
 
@@ -139,16 +128,12 @@ h3 {
 }
 
 .contactContainer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  /*display: grid;*/
+  /*grid-template-columns: 50% 50%;*/
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  gap: 25px;
+  gap: 15px;
 }
 
 .contact {
@@ -214,6 +199,7 @@ textarea {
   width: 20px;
 }
 
+/*botones con hover*/
 .formReset {
   font-size: .8rem;
   border: black;
@@ -246,6 +232,8 @@ textarea {
 }
 
 /*---------------------------------------------FIN CONTACTOS----------------------------------*/
+/*--------------------------------------------MAIN--------------------------------------------*/
+/*--------------------------------------------FIN MAIN--------------------------------------------*/
 /*---------------------------------------------MATERIALES PROCESABLES----------------------------------*/
 .bannerProcesables {
   padding: 1.5rem;
@@ -271,4 +259,16 @@ textarea {
 }
 
 /*---------------------------------------------FIN MATERIALES PROCESABLES----------------------------------*/
+/*media querys*/
+@media (max-width: 1080px) {
+  .footerContainer {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .footerBox {
+    margin-left: 0rem;
+  }
+}
+
+/*media querys*/
 /*# sourceMappingURL=style.css.map */
