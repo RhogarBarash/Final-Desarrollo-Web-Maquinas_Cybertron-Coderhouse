@@ -121,6 +121,16 @@ $boxBackground: rgb(226, 211, 192);
   font-size: small;
 }
 
+
+.letrasReset{
+  color: rgb(219, 211, 211);
+  transition: 1s;
+}
+
+.letrasReset:hover {
+  color: rgb(176, 226, 233);
+}
+
 /*---------------------------------------------FIN FOOTER----------------------------------*/
 
 /*---------------------------------------------CONTACTOS----------------------------------*/
@@ -135,7 +145,6 @@ $boxBackground: rgb(226, 211, 192);
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;    
-    gap: 15px;    
   }
 
   .contact{
@@ -143,9 +152,16 @@ $boxBackground: rgb(226, 211, 192);
     margin-bottom: 5%;
   }
   
-  .contactMap {    
+  .contactBox {    
     padding: 1.5rem;
     background-color: rgb(241, 235, 227);    
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,.3);
+    transition: background .4s ease;
+  }
+
+  .direccionBox {    
+    padding: 0.5rem;
+    background-color: rgb(255, 255, 255);    
     box-shadow: 0 1px 10px 0 rgba(0,0,0,.3);
     transition: background .4s ease;
   }
@@ -153,14 +169,7 @@ $boxBackground: rgb(226, 211, 192);
   .mapImg {
     padding: 1.4rem 0;
     max-width: 100%;
-  }
-      
-  .contactFormulario {
-    padding: 1.5rem;
-    background-color: rgb(241, 235, 227);    
-    box-shadow: 0 1px 10px 0 rgba(0,0,0,.3);
-    transition: background .4s ease;
-  }
+  }  
   
   .formSection {
     display: flex;
@@ -216,7 +225,7 @@ $boxBackground: rgb(226, 211, 192);
   }
 
   .sendButton{
-    border: black solid; 
+    border: rgb(126, 124, 124) solid; 
   }
   .sendButton:hover{
     background-color: burlywood;

@@ -65,48 +65,52 @@
         <section class="contact">
             <div class="contactContainer row">    
                 <!--box izquierdo mapa-->
-                <div class="contactMap col-12 col-lg-6">
-                    <h2>Nuestro local</h2>
-                    <img src="images/mapa.png" alt="storeLocation" class="mapImg">                    
+                <div class="col-12 col-lg-6">
+                    <div class="contactBox h-100">
+                        <h2 class="h2Center">Nuestro local</h2>
+                        <img src="images/mapa.png" alt="storeLocation" class="mapImg">                        
+                    </div>                                      
                 </div>        
                 <!--box derecho form carga datos-->
-                <div class="contactFormulario col-12 col-lg-6">
-                    <h2 class="h2Center">Contactenos</h2>
-                    <form class="form">
-                        <div class="formSection">
-                            <input type="texto" name="nombre" value="Nombre y Apellido" required="">
-                        </div>
-                        <div class="formSection">
-                            <input type="email" value="Email" required="">
-                        </div>
-                        <div class="formSection">
-                            <select name="Ubicación" required="">
-                                <option value="CABA">CABA</option>
-                                <option value="Córdoba">Córdoba</option>
-                                <option value="Mendoza">Mendoza</option>
-                                <option value="Santa Fé">Santa Fé</option>
-                            </select>
-                        </div>                        
-                        <div class="formSection">
-                            <select name="Asunto" required="">
-                                <option value="Asunto">Envíos</option>
-                                <option value="Fechas">Recambios</option>
-                                <option value="Contrataciones">Alquileres</option>
-                            </select>
-                        </div>
-                        <div class="formCheckbox">
-                            <p>¿Desea recibir publicidades sobre nuevos productos? <input class="checkbox" type="checkbox"></p>
-                        </div>
-                        <div class="formSection">
-                            <textarea id="output" rows="10" cols="80" value="Su consulta"></textarea>
-                        </div>
-                        <div class="formSection">
-                            <button class="formReset" type="reset">Borrar mensaje</button>
-                        </div>
-                        <div class="formButton">
-                            <input class="button bnr sendButton" type="submit" value="Enviar">
-                        </div>
-                    </form>
+                <div class="col-12 col-lg-6">
+                    <div class="contactBox">
+                        <h2 class="h2Center">Contactenos</h2>
+                        <form class="form">
+                            <div class="formSection">
+                                <input type="texto" name="nombre" value="Nombre y Apellido" required="">
+                            </div>
+                            <div class="formSection">
+                                <input type="email" value="Email" required="">
+                            </div>
+                            <div class="formSection">
+                                <select name="Ubicación" required="">
+                                    <option value="CABA">CABA</option>
+                                    <option value="Córdoba">Córdoba</option>
+                                    <option value="Mendoza">Mendoza</option>
+                                    <option value="Santa Fé">Santa Fé</option>
+                                </select>
+                            </div>                        
+                            <div class="formSection">
+                                <select name="Asunto" required="">
+                                    <option value="Asunto">Envíos</option>
+                                    <option value="Fechas">Recambios</option>
+                                    <option value="Contrataciones">Alquileres</option>
+                                </select>
+                            </div>
+                            <div class="formCheckbox">
+                                <p>¿Desea recibir publicidades sobre nuevos productos? <input class="checkbox" type="checkbox"></p>
+                            </div>
+                            <div class="formSection">
+                                <textarea id="output" rows="10" cols="80" value="Su consulta"></textarea>
+                            </div>
+                            <div class="formSection">
+                                <button class="formReset" type="reset">Borrar mensaje</button>
+                            </div>
+                            <div class="formButton">
+                                <input class="button bnr sendButton" type="submit" value="Enviar">
+                            </div>
+                        </form>
+                    </div>                    
                 </div>
             </div>
         </section>
@@ -127,20 +131,20 @@
             </div>    
             <div class="footerBox"> <!--2do box-->
                 <h3 class="footerTitle">MENU</h3>
-                <ul>
-                    <ol><a href="index.html" class="c-blanco">Inicio</a></ol>
-                    <ol><a href="quienesSomos.html" class="c-blanco">Quienes Somos</a></ol>
-                    <ol><a href="productos.html" class="c-blanco">Productos</a></ol>
-                    <ol><a href="consultas.html" class="c-blanco">Materiales Procesables</a></ol>
-                    <ol><a href="materialesProcesables.html" class="c-blanco">Contacto</a></ol>
+                <ul class="letrasReset">
+                    <ol><a href="index.html" class="c-blanco letrasReset">Inicio</a></ol>
+                    <ol><a href="quienesSomos.html" class="c-blanco letrasReset">Quienes Somos</a></ol>
+                    <ol><a href="productos.html" class="c-blanco letrasReset">Productos</a></ol>
+                    <ol><a href="materialesProcesables.html" class="c-blanco letrasReset">Materiales Procesables</a></ol>
+                    <ol><a href="contactos.html" class="c-blanco letrasReset">Contacto</a></ol>
                 </ul>
             </div>    
             <div class="footerBox"> <!--3er box-->
                 <h3 class="footerTitle">CONTACTO</h3>
                 <ul>
-                    <ol><a href="#" class="c-blanco">Telefono</a></ol>
-                    <ol><a href="#" class="c-blanco">Email</a></ol>
-                    <ol><a href="#" class="c-blanco">Ubicación</a></ol>
+                    <ol><a href="#" class="c-blanco letrasReset">Telefono</a></ol>
+                    <ol><a href="#" class="c-blanco letrasReset">Email</a></ol>
+                    <ol><a href="#" class="c-blanco letrasReset">Ubicación</a></ol>
                 </ul>
             </div>
         </div>
