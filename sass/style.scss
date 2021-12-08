@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); /*se importa Roboto font*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'); /*se importa Lato font*/
 
-*{
+*{ /*set a 0 de margin/padding*/
     margin: 0;
     padding: 0;
 }
 
-/*font-family: 'Roboto', sans-serif; ---- para linkear en clases*/
-/*font-family: 'Lato', sans-serif; ---- para linkear en clases*/
+/*font-family: 'Roboto', sans-serif; ---- google fonts utilizadas, disponible p/ linkear en clases*/
+/*font-family: 'Lato', sans-serif; ---- google fonts utilizadas, disponible p/ linkear en clases*/
 
 
 body{ /*seteo font default para toda la pagina*/
@@ -84,7 +84,7 @@ $boxBackground: rgb(226, 211, 192);
     transition: background .4s ease;
 }
 
-.footerContainer{
+.footerContainer{ /*container footer*/
   padding: 2rem 0;
   grid-template-columns: repeat(3,1fr);
   grid-row-gap: 1.5rem;
@@ -99,7 +99,7 @@ $boxBackground: rgb(226, 211, 192);
   width: 100;    
 }
 
-.footerBox{  
+.footerBox{  /*fonts para txts*/
   text-align: center;
 }
 
@@ -110,7 +110,7 @@ $boxBackground: rgb(226, 211, 192);
 .footerSocial{
   font-size: medium;
   margin-right: 0.5rem; 
-}
+} /*fin fonts para txts*/
 
 .footerCopyright{
   border-top: 2px solid;
@@ -122,7 +122,7 @@ $boxBackground: rgb(226, 211, 192);
 }
 
 
-.letrasReset{
+.letrasReset{ /*hover+color txts*/
   color: rgb(219, 211, 211);
   transition: 1s;
 }
@@ -139,7 +139,7 @@ $boxBackground: rgb(226, 211, 192);
     padding: 2.50rem 1.75rem;
   }
 
-  .contactContainer {    
+  .contactContainer {  /*set de container*/  
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;    
@@ -150,14 +150,14 @@ $boxBackground: rgb(226, 211, 192);
     margin-bottom: 5%;
   }
   
-  .contactBox {    
+  .contactBox {    /*box para form*/
     padding: 1.5rem;
     background-color: rgb(241, 235, 227);    
     box-shadow: 0 1px 10px 0 rgba(0,0,0,.3);
     transition: background .4s ease;
   }
 
-  .direccionBox {    
+  .direccionBox {    /*box para mapa*/
     padding: 0.5rem;
     background-color: rgb(255, 255, 255);    
     box-shadow: 0 1px 10px 0 rgba(0,0,0,.3);
@@ -169,7 +169,7 @@ $boxBackground: rgb(226, 211, 192);
     max-width: 100%;
   }  
   
-  .formSection {
+  .formSection { /* inicio classes form*/
     display: flex;
     padding: 1rem 3.75rem;
   }
@@ -228,15 +228,10 @@ $boxBackground: rgb(226, 211, 192);
   .sendButton:hover{
     background-color: burlywood;
     transition: .5s;
-  }
+  } /* fin clases form*/
   
 /*---------------------------------------------FIN CONTACTOS----------------------------------*/
 
-/*--------------------------------------------MAIN--------------------------------------------*/
-
-
-
-/*--------------------------------------------FIN MAIN--------------------------------------------*/
 
 /*---------------------------------------------MATERIALES PROCESABLES----------------------------------*/
 .bannerProcesables{
